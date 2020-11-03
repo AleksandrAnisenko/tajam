@@ -1,34 +1,90 @@
-header{
-    max-width: 1600px;    
-    margin: 0 auto;
+header {
     background-image: url(/img/header.jpg);
     background-position: center center;
     background-repeat: no-repeat;
   }
   
-  .header-wrapper {
+.header-wrapper {
     background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
     opacity: 0.85;
     padding: 15px 0 70px;
-  }
+}
   
-  .container {
-    max-width: 940px;
-    padding: 0;
-  }
-  
-  .logo-nav-wrapper {
+.logo-nav-wrapper {
     @include d-f;
     margin-bottom: 163px;
-  }
+}
   
-  .navbar {
+.navbar {
     @include d-f;
     padding: 0;
-  }
+}
   
-  .navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .active>.nav-link {
+    @include f-roboto;  
     padding: 0;
     color: #ffffff;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 0.33px;
     margin-left: 20px;
-  }
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: $use-color;
+}
+
+header .carousel-inner h6 {
+    @include f-playfair;
+    color: #ffffff;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.32px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.line {
+    margin: 0 auto;
+    width: 50px;
+    border-bottom: 1px solid $use-color;
+    margin-bottom: 30px;
+}
+
+header .carousel-inner p {
+    @include f-roboto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    max-width: 771px;
+    margin: 0 auto 50px;
+}
+
+header .button{
+      margin-bottom: 127px;
+}
+
+header ol.carousel-indicators {
+      margin: 0;
+}
+
+header ol.carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #c2c2c2;
+      border-radius: 50%;
+      background: none;
+      box-sizing: border-box;
+}
+
+header ol.carousel-indicators li.active {
+      background-color: $use-color;
+      border: none;
+}

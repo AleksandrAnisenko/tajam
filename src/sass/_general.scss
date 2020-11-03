@@ -1,4 +1,42 @@
+$use-color: #00e0d0;
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
   }
+
+header, main, footer {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 940px;
+    padding: 0;
+  }
+
+.button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid $use-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $use-color;
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}  
+
+.button:hover {
+    background-color: rgba(0, 224, 209, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
