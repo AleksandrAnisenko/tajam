@@ -7,12 +7,12 @@ header {
 .header-wrapper {
     background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
     opacity: 0.85;
-    padding: 15px 0 70px;
+    padding: 15px 0 69px;
 }
   
 .logo-nav-wrapper {
     @include d-f;
-    margin-bottom: 163px;
+    margin-bottom: 160px;
 }
   
 .navbar {
@@ -45,7 +45,7 @@ header .carousel-inner h6 {
     letter-spacing: 0.32px;
     line-height: normal;
     text-align: center;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .line {
@@ -68,7 +68,7 @@ header .carousel-inner p {
 }
 
 header .button{
-      margin-bottom: 127px;
+      margin-bottom: 120px;
 }
 
 header ol.carousel-indicators {
@@ -88,3 +88,6 @@ header ol.carousel-indicators li.active {
       background-color: $use-color;
       border: none;
 }
+
+
+

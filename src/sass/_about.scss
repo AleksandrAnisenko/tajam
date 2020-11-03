@@ -1,0 +1,39 @@
+.about {
+    padding: 70px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-wrapper img {
+    margin-right: 100px;
+    width: 235px;
+    height: 229px;
+}
+
+.story {
+    max-width: 538px;
+}
+
+.story h5 {
+    @include h5;
+    margin-bottom: 28px;
+}
+
+.story p {
+    @include f-roboto;
+    opacity: 0.75;
+    color: #413d4b;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    font-style: normal;
+    letter-spacing: 0.42px;
+    margin-bottom: 31px;
+}
+
+.about .button {
+    margin: 0;
+}

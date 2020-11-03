@@ -1,16 +1,25 @@
 @mixin d-f {
     display: flex;
     justify-content: space-between;
-  }
+}
   
-  @mixin f-roboto{
+@mixin f-roboto{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
   
-  }
+}
   
-  @mixin f-playfair {
+@mixin f-playfair {
     font-family: 'Playfair Display', serif;
     font-style: normal;
-  }
+}
+
+@mixin h5 {
+    @include f-playfair;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
   
