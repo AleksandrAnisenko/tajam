@@ -1,0 +1,20 @@
+@mixin d-f {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @mixin f-roboto{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+  
+  }
+  
+  @mixin f-playfair {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+  }
+  
+  @mixin f-hammersmith {
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+  }
