@@ -16,6 +16,11 @@ header, main, footer {
     max-width: 940px;
     padding: 0;
   }
+.line {
+  margin: 0 auto;
+  width: 50px;
+  border-bottom: 2px solid rgba(65, 61, 75, 0.3);
+}
 
 .button {
     width: 120px;
