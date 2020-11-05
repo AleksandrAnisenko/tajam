@@ -1,91 +1,97 @@
 header {
-    background-image: url(/img/header.jpg);
+    background-image: url(../img/header.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-  }
-  
-.header-wrapper {
-    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-    opacity: 0.85;
-    padding: 15px 0 69px;
-}
-  
-.logo-nav-wrapper {
-    @include d-f;
-    margin-bottom: 160px;
-}
-  
-.navbar {
-    @include d-f;
-    padding: 0;
-}
-  
-.navbar-light .navbar-nav .active>.nav-link {
-    @include f-roboto;  
-    padding: 0;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 900;
-    line-height: normal;
-    font-style: normal;
-    letter-spacing: 0.33px;
-    margin-left: 20px;
-}
 
-.navbar-light .navbar-nav .active>.nav-link:hover {
-    color: $use-color;
+    & .header-wrapper {
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity: 0.85;
+        padding: 15px 0 69px;
+
+        & .logo-nav-wrapper {
+            @include d-f;
+            margin-bottom: 160px;
+
+            & .navbar {
+                @include d-f;
+                padding: 0;
+            }
+        }
+
+        & .carousel-inner {
+            
+            & h6 {
+                @include f-playfair;
+                color: #ffffff;
+                font-family: "Playfair Display";
+                font-size: 32px;
+                font-weight: 900;
+                letter-spacing: 0.32px;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            & .line {
+                border-bottom: 1px solid $use-color;
+                margin-bottom: 30px;
+            }
+
+            & p {
+                @include f-roboto;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.7px;
+                max-width: 771px;
+                margin: 0 auto 50px;
+            }
+
+            & .button{
+                margin-bottom: 120px;
+          }
+        }
+
+        & ol.carousel-indicators {
+            margin: 0;
+
+            & li {
+                width: 10px;
+                height: 10px;
+                border: 1px solid #c2c2c2;
+                border-radius: 50%;
+                background: none;
+                box-sizing: border-box;
+            }
+
+            & li.active {
+                background-color: $use-color;
+                border: none;
+          }
+        }
+
+        
+
+        
+    }
+
+    & .navbar-light .navbar-nav .active>.nav-link {
+        @include f-roboto;  
+        padding: 0;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 900;
+        line-height: normal;
+        font-style: normal;
+        letter-spacing: 0.33px;
+        margin-left: 20px;
+        transition: 0.5s;
+
+        &:hover {
+            color: $use-color;
+        }
+    }
+
 }
-
-header .carousel-inner h6 {
-    @include f-playfair;
-    color: #ffffff;
-    font-family: "Playfair Display";
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: 0.32px;
-    line-height: normal;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-header .line {
-    border-bottom: 1px solid $use-color;
-    margin-bottom: 30px;
-}
-
-header .carousel-inner p {
-    @include f-roboto;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.7px;
-    max-width: 771px;
-    margin: 0 auto 50px;
-}
-
-header .button{
-      margin-bottom: 120px;
-}
-
-header ol.carousel-indicators {
-      margin: 0;
-}
-
-header ol.carousel-indicators li {
-      width: 10px;
-      height: 10px;
-      border: 1px solid #c2c2c2;
-      border-radius: 50%;
-      background: none;
-      box-sizing: border-box;
-}
-
-header ol.carousel-indicators li.active {
-      background-color: $use-color;
-      border: none;
-}
-
-
-

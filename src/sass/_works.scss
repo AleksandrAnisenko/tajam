@@ -1,0 +1,40 @@
+.works {
+    padding: 70px 0;
+
+    & .works-wrapper {
+        @include d-f;
+        align-items: center;
+        margin-bottom: 71px;
+
+        & h2 {
+            @include h2;
+            margin: 0;
+        }
+
+        & a {
+            transition: 0.5s;
+            color: #413d4b;
+            @include f-roboto;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0.7px;
+            line-height: normal;
+
+            &:hover {
+                text-decoration: none;
+                color: $use-color;
+            }
+        }
+    }
+
+    & .grid-works {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-bottom: 70px;
+
+        & img {
+            width: ;
+        }
+    }
+}

@@ -7,21 +7,121 @@
 }
 
 @media (max-width: 768px) {
+
+    header {
+        & .header-wrapper {
+            padding-bottom: 40px;
+
+            & .logo-nav-wrapper, .button {
+                margin-bottom: 50px;
+            }
+        
+            &  .carousel-inner p {
+                margin-bottom: 30px;
+            }
+        
+            &  .carousel-inner h6 {
+                font-size: 24px;
+            }
+        }
     
-    .header-wrapper {
-        padding-bottom: 40px;
+        
+    }
+    
+    .about {
+
+        & .about-wrapper {
+            flex-direction: column;
+            align-items: center;
+    
+            & img {
+                margin-right: 0;
+            }
+    
+            & h2 {
+                text-align: center;
+            }
+    
+            & .button {
+                margin: 0 auto;
+            }
+        }
+    
+        & .video iframe {
+            height: 300px;
+        }
+    }
+    
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        & .inner {
+        
+            &:nth-child(2) {
+                border-right: none;
+            }
+            
+            &:nth-child(3) {
+                border-right: 1px solid #ebebeb;
+            }
+        
+            &:nth-child(4) {
+                border-bottom: 1px solid #ebebeb;
+                border-right: none;
+            }
+        }
     }
 
-    .logo-nav-wrapper, header .button {
-        margin-bottom: 50px;
-    }
+    .team {
+        background-image: none;
 
-    header .carousel-inner p {
-        margin-bottom: 30px;
-    }
-
-    header .carousel-inner h6 {
-        font-size: 24px;
+        & .team-wrapper{
+            opacity: 1;
+            
+            & .items-wrapper {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-bottom: 30px;
+    
+                & .item {
+                    width: 40%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
     
 }    
+
+@media (max-width: 480px) {
+    .expertise-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        & .inner {
+
+            &:nth-child(1n)  {
+                border-right: none;
+                border-bottom: 1px solid #ebebeb;
+            }
+
+            &:last-child  {
+                border: none;
+            }
+            
+        }
+    }
+
+    .team {
+
+        & .team-wrapper{
+            
+            & .items-wrapper {
+    
+                & .item {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
