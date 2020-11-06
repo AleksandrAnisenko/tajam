@@ -4,6 +4,13 @@
        padding: 0 10px;
    }
 
+   .works {
+
+        & .grid-works {
+            grid-template-columns: repeat(4, 1fr);
+        }
+   }
+
 }
 
 @media (max-width: 768px) {
@@ -91,6 +98,13 @@
             }
         }
     }
+
+    .works {
+
+        & .grid-works {
+            grid-template-columns: repeat(2, 1fr);
+        }
+   }
     
 }    
 
@@ -124,4 +138,20 @@
             }
         }
     }
+
+    .works {
+
+        & .works-wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            & h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        & .grid-works {
+            grid-template-columns: repeat(1, 1fr);
+        }
+   }
 }

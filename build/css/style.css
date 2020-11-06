@@ -332,10 +332,17 @@ header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-bottom: 70px; }
+    .works .grid-works a img {
+      width: 100%; }
+
+.testimonials {
+  padding: 69px 0; }
 
 @media (max-width: 1024px) {
   .container {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .works .grid-works {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media (max-width: 768px) {
   header .header-wrapper {
@@ -376,7 +383,9 @@ header {
         margin-bottom: 30px; }
         .team .team-wrapper .items-wrapper .item {
           width: 40%;
-          margin-bottom: 30px; } }
+          margin-bottom: 30px; }
+  .works .grid-works {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 480px) {
   .expertise-grid {
@@ -387,4 +396,11 @@ header {
     .expertise-grid .inner:last-child {
       border: none; }
   .team .team-wrapper .items-wrapper .item {
-    width: 60%; } }
+    width: 60%; }
+  .works .works-wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .works .works-wrapper h2 {
+      margin-bottom: 20px; }
+  .works .grid-works {
+    grid-template-columns: repeat(1, 1fr); } }
