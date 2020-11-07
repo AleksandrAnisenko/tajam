@@ -1,0 +1,207 @@
+footer {
+    background-image: url(../img/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    & .footer-wrapper {
+        background-image: linear-gradient(to right, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%);
+        padding: 70px 0 40px;
+
+        & .footer-wrap {
+            @include d-f;
+
+            & .footer-logo {
+                width: 32%;
+
+                & img {
+                    margin-bottom: 27px;
+                }
+
+                & p {
+                    color: #ffffff;
+                    @include f-roboto;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 26px;
+                    letter-spacing: 0.35px;
+                    margin-bottom: 62px;
+                    max-width: 283px;
+                }
+                & .link-footer-wrapper {
+                    @include d-f;
+
+                    & a {
+                        color: #ffffff;
+                        @include f-roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0.35px;
+                        text-decoration: none;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $use-color;
+                        }
+                    } 
+                }
+            }
+
+            & .studio {
+                width: 29%;
+
+                & h4 {
+                    @include h4;
+                }
+
+                & .geo-wrapper {
+                    @include d-f;
+
+                    & img {
+                        width: 14px;
+                        height: 19px;
+                        margin-right: 16px;
+                    }
+
+                    & p {
+                        color: #ffffff;
+                        @include f-roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 26px;
+                        letter-spacing: 0.35px;
+                        margin-bottom: 27px;
+                        max-width: 240px;
+                    }
+                }
+
+                & .phone-wrapper {
+                    display: flex;
+
+                    & img {
+                        width: 14px;
+                        height: 19px;
+                        margin-right: 16px;
+                    }
+
+                    & a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        @include f-roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 26px;
+                        letter-spacing: 0.35px;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $use-color;
+                        }
+                    }
+                }
+            }
+
+            & .subscribe {
+                @include d-f;
+                flex-direction: column;
+                width: 31%;
+
+                & h4 {
+                    @include h4;
+                }
+
+                & form {
+                    @include d-f;
+                    margin-bottom: 27px;
+
+                    & input {
+                        background: none;
+                        height: 45px;
+                        width: 211px;
+                        padding-left: 16px;
+                        border: 1px solid rgba(255, 255, 255, 0.5);
+                        opacity: 0.75;
+                        color: #ffffff;
+                        @include f-roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 26px;
+                        letter-spacing: 0.7px;
+                        outline: none;
+                    }
+
+                    & button {
+                        width: 70px;
+                        height: 45px;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        transition: 0.5s;
+
+                        &:hover {
+                            background-color: rgba(0, 224, 209, 0.5);;
+                        }
+                    }
+                }
+
+                & .social {
+                    display: flex;
+                    margin-bottom: 70px;
+
+                    & a {
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 35px;
+                        height: 35px;
+                        border: 1px solid #ffffff;
+                        border-radius: 50%;
+                        color: #ffffff;
+                        margin-right: 8px;
+                        transition: 0.5s;
+
+                        &.facebook:hover {
+                            color: #3b5998;
+                            border-color: #3b5998;
+                        }
+
+                        &.twitter:hover {
+                            color: #1da1f2;
+                            border-color: #1da1f2;
+                        }
+
+                        &.dribbble:hover {
+                            color: #eb4d88;
+                            border-color: #eb4d88;
+                        }
+
+                        &.instagram:hover {
+                            color: #FFDC80;
+                            border-color: #FFDC80;
+                        }
+
+                        &.google:hover {
+                            color: #ec314e;
+                            border-color: #ec314e;
+                        }
+
+                        &.youtube:hover {
+                            color: #cd201d;
+                            border-color: #cd201d;
+                        }
+                    }
+                }
+
+                & p {
+                    color: #ffffff;
+                    @include f-roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: right;
+                    letter-spacing: 0.35px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

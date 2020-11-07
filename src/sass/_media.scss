@@ -4,6 +4,39 @@
        padding: 0 10px;
    }
 
+   header .header-wrapper .logo-nav-wrapper .navbar {
+       position: absolute;
+       right: 0;
+       top: 0px;
+       background-color: #3d3062;
+       padding-top: 60px;
+       z-index: 2;
+   }
+
+   .navbar-light .navbar-toggler {
+       border: none;
+       position: absolute;
+       right: 10px;
+       top: 10;
+       outline: none;
+   }
+
+   .navbar-light .navbar-toggler-icon {
+       background-image: none;
+
+       &:before {
+        font-family: FontAwesome;
+        content: "\f0c9";
+        line-height: 30px;
+        font-size: 30px;
+        color: #ffffff;
+        }
+   }
+
+   .navbar-light .navbar-nav .active>.nav-link {
+       margin: 0 0 20px;
+   }
+
    .works {
 
         & .grid-works {
@@ -32,10 +65,6 @@
     header {
         & .header-wrapper {
             padding-bottom: 40px;
-
-            & .logo-nav-wrapper, .button {
-                margin-bottom: 50px;
-            }
         
             &  .carousel-inner p {
                 margin-bottom: 30px;
@@ -58,13 +87,16 @@
             & img {
                 margin-right: 0;
             }
-    
-            & h2 {
-                text-align: center;
-            }
-    
-            & .button {
-                margin: 0 auto;
+
+            & .story {
+
+                & h2 {
+                    text-align: center;
+                }
+        
+                & .button {
+                    margin: 0 auto;
+                }
             }
         }
     
@@ -119,10 +151,105 @@
             grid-template-columns: repeat(2, 1fr);
         }
    }
+
+   .contact {
+
+        & .contact-wrapper {
+            @include d-f;
+            flex-direction: column;
+            align-items: center;
+
+            & form {
+                align-items: center;
+                width: 80%;
+                margin-bottom: 50px;
+
+                & textarea {
+                    max-height: 100px;
+                }
+            }
+
+            & .clients {
+                width: 80%;
+
+                & h2 {
+                    text-align: center;
+                }
+
+                & .clients-wrapper {
+
+                    & .client-logo {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-image: none;
     
-}    
+        & .footer-wrapper {
+            padding: 30px 0;
+    
+            & .footer-wrap {
+                flex-direction: column;
+                align-items: center;
+
+                & .footer-logo {
+                    width: 80%;
+                    @include d-f;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 50px;
+
+                    & p {
+                        max-width: 90%;
+                        margin-bottom: 20px;
+                    }
+
+                    & .link-footer-wrapper a:nth-child(2) {
+                        margin: 0 10px;
+                    }
+
+                }
+
+                
+                & .studio {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 80%;
+                    margin-bottom: 50px;
+
+                    & h4 {
+                        margin: 0  auto 20px;
+                    }
+
+                    & .geo-wrapper {
+                        
+                        & p {
+                            max-width: 800%;
+                        }
+                    }
+                }
+
+                & .subscribe {
+                    width: 80%;
+                    align-items: center;
+                }
+            }
+        }    
+    }
+}
+    
+    
 
 @media (max-width: 480px) {
+
+    header {
+        background-image: none;
+    }
     .expertise-grid {
         grid-template-columns: repeat(1, 1fr);
 
@@ -195,5 +322,19 @@
                 bottom: -35px;
             } 
         }  
-    }      
+    }   
+    
+    .contact {
+
+        & .contact-wrapper {
+
+            & .clients {
+
+                & .clients-wrapper {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(10, 90px);
+                }
+            }
+        }
+    }
 }

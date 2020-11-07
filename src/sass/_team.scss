@@ -4,8 +4,7 @@
     background-repeat: no-repeat;
 
     & .team-wrapper {
-        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-        opacity: 0.85;
+        background-image: linear-gradient(to right, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%);
         padding: 60px 0;
 
         & h2 {
