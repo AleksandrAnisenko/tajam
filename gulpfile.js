@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     ghPages = require('gulp-gh-pages'),
     sass = require('gulp-sass'),
     pug  = require('gulp-pug'),
+    image = require('gulp-image'),
     browserSync = require('browser-sync').create()
 
 gulp.task('deploy', function() {
@@ -25,9 +26,17 @@ gulp.task('sass', function() {
   .pipe(gulp.dest('build/css'))
 });
 
+gulp.task('image', function (done) {
+  gulp.src('src/img/*')
+    .pipe(image())
+    .pipe(gulp.dest('build/img'));
+    done();
+});
+
 gulp.task('watch', function() {
   gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
   gulp.watch('src/sass/**/*.scss', gulp.series('sass'));
+  gulp.watch('src/img/*', gulp.series('image'));
 });
 
 gulp.task('serve', function() {
@@ -40,6 +49,7 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', gulp.series(
-  gulp.parallel('pug', 'sass'),
+  gulp.parallel('pug', 'sass', 'image'),
   gulp.parallel('watch', 'serve')
 ));
+
