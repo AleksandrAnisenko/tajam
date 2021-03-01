@@ -1,7 +1,13 @@
 var gulp = require('gulp'),
+    ghPages = require('gulp-gh-pages'),
     sass = require('gulp-sass'),
     pug  = require('gulp-pug'),
     browserSync = require('browser-sync').create()
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+  .pipe(ghPages());
+});
 
 gulp.task('pug', function() {
   return gulp.src('src/pug/**/*.pug')
