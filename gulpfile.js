@@ -6,8 +6,8 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create()
 
 gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
-  .pipe(ghPages());
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('pug', function() {
