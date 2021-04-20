@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alex",
+  "author": "Dimon",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
